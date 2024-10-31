@@ -23,27 +23,27 @@
   - Media en conflictos entre miembros del equipo.
 
 - [ ] (R2) - Arquitectura:
-  - Solo pushea contra dev.
+  - Solo pushea contra dev_R2
   - Definición del hardware.
   - Scriptear la instalacion de todos los programas necesarios para el desarrollo del TP.
   - Estructura de discos / FS.
   - Colabora con los distintos desarrollos
 
 - [ ] (R3) - Automatización Nivel 1:
-  - Solo pushea contra dev.
+  - Solo pushea contra dev_R3
   - Script Creación de usuarios.
   - Script Monitoreo web.
   - Documenta los Script  realizados.
   - Colabora con los distintos desarrollos
 
 - [ ] (R4) - Automatización Nivel 2:
-  - Solo pushea contra dev.
+  - Solo pushea contra dev_R4
   - Desarrollo de Playbooks de Ansible.
   - Desarrolla Roles de Ansible.
   - Colabora con los distintos desarrollos
 
 - [ ] (R5) - Microservicios:
-  - Solo pushea contra dev.
+  - Solo pushea contra dev_R5
   - Desarrollo de imágenes Docker / docker-compose.
   - Publicacion de la imagen en dockerhub
   - Responsable de la ejecución de las imágenes.
@@ -51,7 +51,7 @@
   - Colabora con los distintos desarrollos
 
 - [ ] (R6) - Testing / Documentación:
-  - Solo pushea contra dev.
+  - Solo pushea contra dev_R6
   - Generación y verificación de issues.
   - Desarrolla Playbook de testing unitarios dentro de los Roles de Ansible.
   - Prueba y Verifica las distintas soluciones desarrolladas
