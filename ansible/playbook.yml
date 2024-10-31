@@ -4,6 +4,10 @@
   - testing
   - produccion
 
+  # Variables Globales
+  vars_files:
+    - vars/main.yml
+
   tasks:
     - include_role:
         name: TP_INI
