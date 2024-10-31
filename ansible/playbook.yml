@@ -1,0 +1,14 @@
+---
+- hosts: 
+#  - all
+  - testing
+  - produccion
+
+  tasks:
+    - include_role:
+        name: TP_INI
+    
+    - name: "Otra tarea"
+      debug:
+        msg: "Despues de la ejecucion del rol"
+
