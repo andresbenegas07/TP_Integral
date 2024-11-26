@@ -1,4 +1,21 @@
 ---
 # Variables Globales:
 
-Nombre_Grupo: "Nombre-Grupo-Ejemplo"
+Nombre_Grupo: "municipalidad-de-la-utn"
+
+
+LIST_USUARIOS: 
+    - "R1_Collante"
+    - "R2_Aguirre"
+    - "R3_Beneju"
+    - "R4_Camara"
+    - "R5_Almiron"
+    - "R6_Benegas"
+
+LIST_GROUPS:
+  - "G_R1"
+  - "G_R2"
+  - "G_R3"
+  - "G_R4"
+  - "G_R5"
+  - "G_R6"

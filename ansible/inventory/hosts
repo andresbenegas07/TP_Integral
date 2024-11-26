@@ -3,7 +3,8 @@ testing
 produccion
 
 [testing]
-127.0.0.1 
+ansible_host=192.168.56.4 ansible_user=vagrant
 
 [produccion]
-localhost ansible_connection=local 
+ansible_host=192.168.56.5 ansible_user=vagrant
+

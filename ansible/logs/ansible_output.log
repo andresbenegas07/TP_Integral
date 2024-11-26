@@ -1,0 +1,377 @@
+2024-11-19 16:08:45,725 p=5048 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: testing
+
+2024-11-19 16:08:45,735 p=5048 u=vagrant n=ansible | PLAY [testing,produccion] *************************************************************
+2024-11-19 16:08:45,768 p=5048 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************
+2024-11-19 16:08:47,289 p=5048 u=vagrant n=ansible | ok: [192.168.56.5]
+2024-11-19 16:08:47,311 p=5048 u=vagrant n=ansible | TASK [include_role : TP_INI] **********************************************************
+2024-11-19 16:08:47,384 p=5048 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: Nombre-Grupo-Ejemplo] *****************************
+2024-11-19 16:08:47,408 p=5048 u=vagrant n=ansible | ok: [192.168.56.5] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-11-19 16:08:47,424 p=5048 u=vagrant n=ansible | TASK [Otra tarea] *********************************************************************
+2024-11-19 16:08:47,444 p=5048 u=vagrant n=ansible | ok: [192.168.56.5] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 16:08:47,467 p=5048 u=vagrant n=ansible | PLAY RECAP ****************************************************************************
+2024-11-19 16:08:47,467 p=5048 u=vagrant n=ansible | 192.168.56.5               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:13:34,322 p=5149 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 16:13:34,484 p=5149 u=vagrant n=ansible | PLAY [testing,produccion] ***************************************************************************************************************************************************
+2024-11-19 16:13:34,500 p=5149 u=vagrant n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-11-19 16:13:36,850 p=5149 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 16:13:37,469 p=5149 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 16:13:37,492 p=5149 u=vagrant n=ansible | TASK [include_role : TP_INI] ************************************************************************************************************************************************
+2024-11-19 16:13:37,576 p=5149 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: Nombre-Grupo-Ejemplo] *******************************************************************************************************************
+2024-11-19 16:13:37,630 p=5149 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-11-19 16:13:37,644 p=5149 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-11-19 16:13:37,658 p=5149 u=vagrant n=ansible | TASK [Otra tarea] ***********************************************************************************************************************************************************
+2024-11-19 16:13:37,695 p=5149 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 16:13:37,711 p=5149 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 16:13:37,734 p=5149 u=vagrant n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-11-19 16:13:37,735 p=5149 u=vagrant n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:13:37,735 p=5149 u=vagrant n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:17:05,117 p=5447 u=vagrant n=ansible | [WARNING]: A duplicate localhost-like entry was found (localhost). First found localhost was 127.0.0.1
+
+2024-11-19 16:17:05,263 p=5447 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3, found a duplicate dict key (tasks). Using
+last defined value only.
+
+2024-11-19 16:17:05,311 p=5447 u=vagrant n=ansible | PLAY [testing,produccion] ***************************************************************************************************************************************************
+2024-11-19 16:17:05,331 p=5447 u=vagrant n=ansible | TASK [Gathering Facts] ******************************************************************************************************************************************************
+2024-11-19 16:17:07,716 p=5447 u=vagrant n=ansible | ok: [localhost]
+2024-11-19 16:17:08,332 p=5447 u=vagrant n=ansible | ok: [127.0.0.1]
+2024-11-19 16:17:08,354 p=5447 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios] *****************************************************************************************************************************************
+2024-11-19 16:17:08,435 p=5447 u=vagrant n=ansible | TASK [Alta_Usuarios : Rol: TP_INI - Grupo: Nombre-Grupo-Ejemplo] ************************************************************************************************************
+2024-11-19 16:17:08,489 p=5447 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-11-19 16:17:08,508 p=5447 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-11-19 16:17:08,523 p=5447 u=vagrant n=ansible | TASK [Otra tarea] ***********************************************************************************************************************************************************
+2024-11-19 16:17:08,565 p=5447 u=vagrant n=ansible | ok: [127.0.0.1] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 16:17:08,579 p=5447 u=vagrant n=ansible | ok: [localhost] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 16:17:08,600 p=5447 u=vagrant n=ansible | PLAY RECAP ******************************************************************************************************************************************************************
+2024-11-19 16:17:08,604 p=5447 u=vagrant n=ansible | 127.0.0.1                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:17:08,608 p=5447 u=vagrant n=ansible | localhost                  : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:41:33,747 p=5774 u=vagrant n=ansible | [WARNING]: Found both group and host with same name: produccion
+
+2024-11-19 16:41:33,893 p=5774 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column
+3, found a duplicate dict key (tasks). Using last defined value only.
+
+2024-11-19 16:41:33,942 p=5774 u=vagrant n=ansible | PLAY [testing,produccion] *******************************************************************************************************
+2024-11-19 16:41:33,963 p=5774 u=vagrant n=ansible | TASK [Gathering Facts] **********************************************************************************************************
+2024-11-19 16:41:34,084 p=5774 u=vagrant n=ansible | fatal: [produccion]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname produccion: Temporary failure in name resolution", "unreachable": true}
+2024-11-19 16:41:36,324 p=5774 u=vagrant n=ansible | ok: [vmtesting]
+2024-11-19 16:41:36,344 p=5774 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios] *********************************************************************************************
+2024-11-19 16:41:36,375 p=5774 u=vagrant n=ansible | ERROR! the role 'Alta_Usuarios' was not found in /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/roles:/tmp:/home/vagrant/repogit/UTN-FRA_SO_TP-Integral:/home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible
+
+The error appears to be in '/home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml': line 16, column 15, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    - include_role:
+        name: Alta_Usuarios
+              ^ here
+
+2024-11-19 16:41:36,379 p=5774 u=vagrant n=ansible | PLAY RECAP **********************************************************************************************************************
+2024-11-19 16:41:36,384 p=5774 u=vagrant n=ansible | produccion                 : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:41:36,385 p=5774 u=vagrant n=ansible | vmtesting                  : ok=1    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:44:27,505 p=6005 u=vagrant n=ansible | [WARNING]: Found both group and host with same name: produccion
+
+2024-11-19 16:44:27,636 p=6005 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3, found a duplicate dict key (tasks). Using last defined
+value only.
+
+2024-11-19 16:44:27,683 p=6005 u=vagrant n=ansible | PLAY [testing,produccion] ********************************************************************************************************************************************************************
+2024-11-19 16:44:27,698 p=6005 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-11-19 16:44:27,800 p=6005 u=vagrant n=ansible | fatal: [produccion]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname produccion: Temporary failure in name resolution", "unreachable": true}
+2024-11-19 16:44:29,843 p=6005 u=vagrant n=ansible | ok: [vmtesting]
+2024-11-19 16:44:29,864 p=6005 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************************************************************************************************************
+2024-11-19 16:44:29,905 p=6005 u=vagrant n=ansible | TASK [Otra tarea] ****************************************************************************************************************************************************************************
+2024-11-19 16:44:29,927 p=6005 u=vagrant n=ansible | ok: [vmtesting] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 16:44:29,952 p=6005 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-11-19 16:44:29,953 p=6005 u=vagrant n=ansible | produccion                 : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:44:29,956 p=6005 u=vagrant n=ansible | vmtesting                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:45:56,686 p=6165 u=vagrant n=ansible | [WARNING]: Found both group and host with same name: produccion
+
+2024-11-19 16:45:56,823 p=6165 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3, found a duplicate dict key (tasks). Using last defined
+value only.
+
+2024-11-19 16:45:56,868 p=6165 u=vagrant n=ansible | PLAY [testing,produccion] ********************************************************************************************************************************************************************
+2024-11-19 16:45:56,888 p=6165 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-11-19 16:45:57,007 p=6165 u=vagrant n=ansible | fatal: [produccion]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname produccion: Temporary failure in name resolution", "unreachable": true}
+2024-11-19 16:45:59,055 p=6165 u=vagrant n=ansible | ok: [vmtesting]
+2024-11-19 16:45:59,076 p=6165 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************************************************************************************************************
+2024-11-19 16:45:59,116 p=6165 u=vagrant n=ansible | TASK [Otra tarea] ****************************************************************************************************************************************************************************
+2024-11-19 16:45:59,136 p=6165 u=vagrant n=ansible | ok: [vmtesting] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 16:45:59,156 p=6165 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-11-19 16:45:59,158 p=6165 u=vagrant n=ansible | produccion                 : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:45:59,158 p=6165 u=vagrant n=ansible | vmtesting                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:47:12,089 p=6340 u=vagrant n=ansible | [WARNING]:  * Failed to parse /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/inventory/hosts with yaml plugin: We were unable to read either as JSON nor YAML, these are the errors we
+got from each: JSON: Expecting value: line 1 column 2 (char 1)  Syntax Error while loading YAML.   did not find expected <document start>  The error appears to be in
+'/home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/inventory/hosts': line 2, column 1, but may be elsewhere in the file depending on the exact syntax problem.  The offending line appears
+to be:  [all:children] testing ^ here
+
+2024-11-19 16:47:12,097 p=6340 u=vagrant n=ansible | [WARNING]:  * Failed to parse /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/inventory/hosts with ini plugin: /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/inventory/hosts:3:
+Section [all:children] includes undefined group: produccion
+
+2024-11-19 16:47:12,097 p=6340 u=vagrant n=ansible | [WARNING]: Unable to parse /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/inventory/hosts as an inventory source
+
+2024-11-19 16:47:12,097 p=6340 u=vagrant n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 16:47:12,244 p=6340 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3, found a duplicate dict key (tasks). Using last defined
+value only.
+
+2024-11-19 16:47:12,299 p=6340 u=vagrant n=ansible | PLAY [testing,produccion_host] ***************************************************************************************************************************************************************
+2024-11-19 16:47:12,321 p=6340 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-11-19 16:47:12,428 p=6340 u=vagrant n=ansible | fatal: [produccion]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname produccion: Temporary failure in name resolution", "unreachable": true}
+2024-11-19 16:47:14,472 p=6340 u=vagrant n=ansible | ok: [vmtesting]
+2024-11-19 16:47:14,494 p=6340 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************************************************************************************************************
+2024-11-19 16:47:14,531 p=6340 u=vagrant n=ansible | TASK [Otra tarea] ****************************************************************************************************************************************************************************
+2024-11-19 16:47:14,552 p=6340 u=vagrant n=ansible | ok: [vmtesting] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 16:47:14,575 p=6340 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-11-19 16:47:14,575 p=6340 u=vagrant n=ansible | produccion                 : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 16:47:14,575 p=6340 u=vagrant n=ansible | vmtesting                  : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 17:03:56,503 p=6840 u=vagrant n=ansible | [WARNING]: No inventory was parsed, only implicit localhost is available
+
+2024-11-19 17:03:56,513 p=6840 u=vagrant n=ansible | [WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not match 'all'
+
+2024-11-19 17:03:56,520 p=6840 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: playbook.yml
+
+2024-11-19 17:03:56,541 p=6840 u=vagrant n=ansible | ERROR! No argument passed to command module (did you mean to run ansible-playbook?)
+2024-11-19 17:04:25,968 p=6841 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3, found a duplicate dict key (tasks). Using last defined
+value only.
+
+2024-11-19 17:04:26,027 p=6841 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produccion_host
+
+2024-11-19 17:04:26,036 p=6841 u=vagrant n=ansible | PLAY [testing,produccion_host] ***************************************************************************************************************************************************************
+2024-11-19 17:04:26,064 p=6841 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-11-19 17:04:28,147 p=6841 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-11-19 17:04:28,174 p=6841 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************************************************************************************************************
+2024-11-19 17:04:28,220 p=6841 u=vagrant n=ansible | TASK [Otra tarea] ****************************************************************************************************************************************************************************
+2024-11-19 17:04:28,259 p=6841 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 17:04:28,294 p=6841 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-11-19 17:04:28,299 p=6841 u=vagrant n=ansible | 192.168.56.4               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 17:06:22,236 p=7001 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3, found a duplicate dict key (tasks). Using last defined
+value only.
+
+2024-11-19 17:06:22,290 p=7001 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produccion_host
+
+2024-11-19 17:06:22,300 p=7001 u=vagrant n=ansible | PLAY [testing,produccion_host] ***************************************************************************************************************************************************************
+2024-11-19 17:06:22,331 p=7001 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-11-19 17:06:24,372 p=7001 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-11-19 17:06:24,403 p=7001 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************************************************************************************************************
+2024-11-19 17:06:24,451 p=7001 u=vagrant n=ansible | TASK [Otra tarea] ****************************************************************************************************************************************************************************
+2024-11-19 17:06:24,500 p=7001 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 17:06:24,519 p=7001 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-11-19 17:06:24,523 p=7001 u=vagrant n=ansible | 192.168.56.4               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 17:08:50,794 p=7159 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-
+FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3, found a duplicate
+dict key (tasks). Using last defined value only.
+
+2024-11-19 17:08:50,855 p=7159 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produccion_host
+
+2024-11-19 17:08:50,866 p=7159 u=vagrant n=ansible | PLAY [testing,produccion_host] *************************************************
+2024-11-19 17:08:50,891 p=7159 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2024-11-19 17:08:53,109 p=7159 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-11-19 17:08:53,135 p=7159 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] ********************
+2024-11-19 17:08:53,176 p=7159 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2024-11-19 17:08:53,203 p=7159 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 17:08:53,240 p=7159 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2024-11-19 17:08:53,244 p=7159 u=vagrant n=ansible | 192.168.56.4               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 17:09:06,910 p=7316 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3,
+found a duplicate dict key (tasks). Using last defined value only.
+
+2024-11-19 17:09:06,954 p=7316 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produccion_host
+
+2024-11-19 17:09:06,964 p=7316 u=vagrant n=ansible | PLAY [testing,produccion_host] ********************************************************************************************************
+2024-11-19 17:09:06,987 p=7316 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-11-19 17:09:08,403 p=7316 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-11-19 17:09:08,443 p=7316 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] ***************************************************************************
+2024-11-19 17:09:08,492 p=7316 u=vagrant n=ansible | TASK [Otra tarea] *********************************************************************************************************************
+2024-11-19 17:09:08,522 p=7316 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 17:09:08,559 p=7316 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-11-19 17:09:08,561 p=7316 u=vagrant n=ansible | 192.168.56.4               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 17:09:56,711 p=7415 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3,
+found a duplicate dict key (tasks). Using last defined value only.
+
+2024-11-19 17:09:56,760 p=7415 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produccion_host
+
+2024-11-19 17:09:56,770 p=7415 u=vagrant n=ansible | PLAY [testing,produccion_host] ********************************************************************************************************
+2024-11-19 17:09:56,793 p=7415 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-11-19 17:09:58,187 p=7415 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-11-19 17:09:58,215 p=7415 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] ***************************************************************************
+2024-11-19 17:09:58,259 p=7415 u=vagrant n=ansible | TASK [Otra tarea] *********************************************************************************************************************
+2024-11-19 17:09:58,288 p=7415 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 17:09:58,316 p=7415 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-11-19 17:09:58,320 p=7415 u=vagrant n=ansible | 192.168.56.4               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 17:10:25,227 p=7513 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3,
+found a duplicate dict key (tasks). Using last defined value only.
+
+2024-11-19 17:10:25,276 p=7513 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produccion_host
+
+2024-11-19 17:10:25,283 p=7513 u=vagrant n=ansible | PLAY [testing,produccion_host] ********************************************************************************************************
+2024-11-19 17:10:25,310 p=7513 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-11-19 17:10:26,732 p=7513 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-11-19 17:10:26,759 p=7513 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] ***************************************************************************
+2024-11-19 17:10:26,811 p=7513 u=vagrant n=ansible | TASK [Otra tarea] *********************************************************************************************************************
+2024-11-19 17:10:26,839 p=7513 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 17:10:26,870 p=7513 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-11-19 17:10:26,870 p=7513 u=vagrant n=ansible | 192.168.56.4               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 17:12:51,199 p=7662 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3,
+found a duplicate dict key (tasks). Using last defined value only.
+
+2024-11-19 17:12:51,247 p=7662 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produccion_host
+
+2024-11-19 17:12:51,261 p=7662 u=vagrant n=ansible | PLAY [testing,produccion_host] ********************************************************************************************************
+2024-11-19 17:12:51,290 p=7662 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-11-19 17:12:53,331 p=7662 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-11-19 17:12:53,357 p=7662 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] ***************************************************************************
+2024-11-19 17:12:53,403 p=7662 u=vagrant n=ansible | TASK [Otra tarea] *********************************************************************************************************************
+2024-11-19 17:12:53,432 p=7662 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 17:12:53,454 p=7662 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-11-19 17:12:53,455 p=7662 u=vagrant n=ansible | 192.168.56.4               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 17:20:42,540 p=7921 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3,
+found a duplicate dict key (tasks). Using last defined value only.
+
+2024-11-19 17:20:42,596 p=7921 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produccion_host
+
+2024-11-19 17:20:42,610 p=7921 u=vagrant n=ansible | PLAY [testing,produccion_host] ********************************************************************************************************
+2024-11-19 17:20:42,641 p=7921 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-11-19 17:20:44,752 p=7921 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-11-19 17:20:44,779 p=7921 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] ***************************************************************************
+2024-11-19 17:20:44,824 p=7921 u=vagrant n=ansible | TASK [Otra tarea] *********************************************************************************************************************
+2024-11-19 17:20:44,856 p=7921 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 17:20:44,891 p=7921 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-11-19 17:20:44,893 p=7921 u=vagrant n=ansible | 192.168.56.4               : ok=2    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 17:36:39,862 p=4278 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-
+FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3, found a duplicate
+dict key (tasks). Using last defined value only.
+
+2024-11-19 17:36:40,033 p=4278 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produccion_host
+
+2024-11-19 17:36:40,046 p=4278 u=vagrant n=ansible | PLAY [testing,produccion_host] *************************************************
+2024-11-19 17:36:40,082 p=4278 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2024-11-19 17:36:42,771 p=4278 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-11-19 17:36:42,789 p=4278 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] ********************
+2024-11-19 17:36:42,865 p=4278 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] ***
+2024-11-19 17:36:42,888 p=4278 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-11-19 17:36:42,897 p=4278 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2024-11-19 17:36:42,916 p=4278 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 17:36:42,937 p=4278 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2024-11-19 17:36:42,937 p=4278 u=vagrant n=ansible | 192.168.56.4               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 17:38:16,777 p=4459 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3,
+found a duplicate dict key (tasks). Using last defined value only.
+
+2024-11-19 17:38:16,837 p=4459 u=vagrant n=ansible | PLAY [testing,produccion] *************************************************************************************************************
+2024-11-19 17:38:16,861 p=4459 u=vagrant n=ansible | TASK [Gathering Facts] ****************************************************************************************************************
+2024-11-19 17:38:19,349 p=4459 u=vagrant n=ansible | ok: [192.168.56.5]
+2024-11-19 17:38:19,417 p=4459 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-11-19 17:38:19,437 p=4459 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] ***************************************************************************
+2024-11-19 17:38:19,517 p=4459 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] *************************************
+2024-11-19 17:38:19,556 p=4459 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-11-19 17:38:19,587 p=4459 u=vagrant n=ansible | ok: [192.168.56.5] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-11-19 17:38:19,613 p=4459 u=vagrant n=ansible | TASK [Otra tarea] *********************************************************************************************************************
+2024-11-19 17:38:19,678 p=4459 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 17:38:19,702 p=4459 u=vagrant n=ansible | ok: [192.168.56.5] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-11-19 17:38:19,736 p=4459 u=vagrant n=ansible | PLAY RECAP ****************************************************************************************************************************
+2024-11-19 17:38:19,736 p=4459 u=vagrant n=ansible | 192.168.56.4               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 17:38:19,740 p=4459 u=vagrant n=ansible | 192.168.56.5               : ok=3    changed=0    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2024-11-19 19:54:59,732 p=4935 u=vagrant n=ansible | [WARNING]: While constructing a mapping from /home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/playbook.yml, line 2, column 3, found a duplicate dict key (tasks). Using last defined
+value only.
+
+2024-11-19 19:54:59,777 p=4935 u=vagrant n=ansible | PLAY [testing,produccion] ********************************************************************************************************************************************************************
+2024-11-19 19:54:59,797 p=4935 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-11-19 19:55:02,158 p=4935 u=vagrant n=ansible | ok: [192.168.56.5]
+2024-11-19 19:55:02,348 p=4935 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-11-19 19:55:02,370 p=4935 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************************************************************************************************************
+2024-11-19 19:55:02,457 p=4935 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] ********************************************************************************************
+2024-11-19 19:55:02,501 p=4935 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-11-19 19:55:02,528 p=4935 u=vagrant n=ansible | ok: [192.168.56.5] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-11-19 19:55:02,540 p=4935 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta de groups Secundarios del usuario] ********************************************************************************************************
+2024-11-19 19:55:03,263 p=4935 u=vagrant n=ansible | changed: [192.168.56.4]
+2024-11-19 19:55:03,652 p=4935 u=vagrant n=ansible | changed: [192.168.56.5]
+2024-11-19 19:55:03,669 p=4935 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Agregando group Primario del usuario] **********************************************************************************************************
+2024-11-19 19:55:04,257 p=4935 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R1_Collante', 'HASH': '$6$W.HASH_FALSO', 'GROUP': 'G_R1', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:04,677 p=4935 u=vagrant n=ansible | changed: [192.168.56.5] => (item={'USERNAME': 'R1_Collante', 'HASH': '$6$W.HASH_FALSO', 'GROUP': 'G_R1', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:04,729 p=4935 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R2_Aguirre', 'HASH': '', 'GROUP': 'G_R2', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:05,252 p=4935 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R3_Beneju', 'HASH': '', 'GROUP': 'G_R3', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:05,585 p=4935 u=vagrant n=ansible | changed: [192.168.56.5] => (item={'USERNAME': 'R2_Aguirre', 'HASH': '', 'GROUP': 'G_R2', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:05,732 p=4935 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R4_Camara', 'HASH': '', 'GROUP': 'G_R4', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:06,228 p=4935 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R5_Almiron', 'HASH': '', 'GROUP': 'G_R5', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:06,528 p=4935 u=vagrant n=ansible | changed: [192.168.56.5] => (item={'USERNAME': 'R3_Beneju', 'HASH': '', 'GROUP': 'G_R3', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:06,736 p=4935 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R6_Benegas', 'HASH': '', 'GROUP': 'G_R6', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:07,341 p=4935 u=vagrant n=ansible | changed: [192.168.56.5] => (item={'USERNAME': 'R4_Camara', 'HASH': '', 'GROUP': 'G_R4', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:08,128 p=4935 u=vagrant n=ansible | changed: [192.168.56.5] => (item={'USERNAME': 'R5_Almiron', 'HASH': '', 'GROUP': 'G_R5', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:08,913 p=4935 u=vagrant n=ansible | changed: [192.168.56.5] => (item={'USERNAME': 'R6_Benegas', 'HASH': '', 'GROUP': 'G_R6', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-11-19 19:55:08,928 p=4935 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta y/o Actualizacion del usuario] ************************************************************************************************************
+2024-11-19 19:55:09,727 p=4935 u=vagrant n=ansible | [WARNING]: The value "['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6']" (type list) was converted to ""['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6']"" (type string). If this does not
+look like what you expect, quote the entire value to ensure it does not change.
+
+2024-11-19 19:55:09,728 p=4935 u=vagrant n=ansible | [WARNING]: The input password appears not to have been hashed. The 'password' argument must be encrypted for this module to work properly.
+
+2024-11-19 19:55:09,736 p=4935 u=vagrant n=ansible | failed: [192.168.56.4] (item={'USERNAME': 'R1_Collante', 'HASH': '$6$W.HASH_FALSO', 'GROUP': 'G_R1', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R1", "GROUPS": "municipalidad-de-la-utn", "HASH": "$6$W.HASH_FALSO", "USERNAME": "R1_Collante"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:09,952 p=4935 u=vagrant n=ansible | failed: [192.168.56.5] (item={'USERNAME': 'R1_Collante', 'HASH': '$6$W.HASH_FALSO', 'GROUP': 'G_R1', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R1", "GROUPS": "municipalidad-de-la-utn", "HASH": "$6$W.HASH_FALSO", "USERNAME": "R1_Collante"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:10,298 p=4935 u=vagrant n=ansible | failed: [192.168.56.4] (item={'USERNAME': 'R2_Aguirre', 'HASH': '', 'GROUP': 'G_R2', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R2", "GROUPS": "municipalidad-de-la-utn", "HASH": "", "USERNAME": "R2_Aguirre"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:10,756 p=4935 u=vagrant n=ansible | failed: [192.168.56.4] (item={'USERNAME': 'R3_Beneju', 'HASH': '', 'GROUP': 'G_R3', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R3", "GROUPS": "municipalidad-de-la-utn", "HASH": "", "USERNAME": "R3_Beneju"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:10,849 p=4935 u=vagrant n=ansible | failed: [192.168.56.5] (item={'USERNAME': 'R2_Aguirre', 'HASH': '', 'GROUP': 'G_R2', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R2", "GROUPS": "municipalidad-de-la-utn", "HASH": "", "USERNAME": "R2_Aguirre"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:11,330 p=4935 u=vagrant n=ansible | failed: [192.168.56.4] (item={'USERNAME': 'R4_Camara', 'HASH': '', 'GROUP': 'G_R4', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R4", "GROUPS": "municipalidad-de-la-utn", "HASH": "", "USERNAME": "R4_Camara"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:11,752 p=4935 u=vagrant n=ansible | failed: [192.168.56.5] (item={'USERNAME': 'R3_Beneju', 'HASH': '', 'GROUP': 'G_R3', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R3", "GROUPS": "municipalidad-de-la-utn", "HASH": "", "USERNAME": "R3_Beneju"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:11,817 p=4935 u=vagrant n=ansible | failed: [192.168.56.4] (item={'USERNAME': 'R5_Almiron', 'HASH': '', 'GROUP': 'G_R5', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R5", "GROUPS": "municipalidad-de-la-utn", "HASH": "", "USERNAME": "R5_Almiron"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:12,338 p=4935 u=vagrant n=ansible | failed: [192.168.56.4] (item={'USERNAME': 'R6_Benegas', 'HASH': '', 'GROUP': 'G_R6', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R6", "GROUPS": "municipalidad-de-la-utn", "HASH": "", "USERNAME": "R6_Benegas"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:12,605 p=4935 u=vagrant n=ansible | failed: [192.168.56.5] (item={'USERNAME': 'R4_Camara', 'HASH': '', 'GROUP': 'G_R4', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R4", "GROUPS": "municipalidad-de-la-utn", "HASH": "", "USERNAME": "R4_Camara"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:13,345 p=4935 u=vagrant n=ansible | failed: [192.168.56.5] (item={'USERNAME': 'R5_Almiron', 'HASH': '', 'GROUP': 'G_R5', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R5", "GROUPS": "municipalidad-de-la-utn", "HASH": "", "USERNAME": "R5_Almiron"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:14,078 p=4935 u=vagrant n=ansible | failed: [192.168.56.5] (item={'USERNAME': 'R6_Benegas', 'HASH': '', 'GROUP': 'G_R6', 'GROUPS': 'municipalidad-de-la-utn'}) => {"ansible_loop_var": "item", "changed": false, "item": {"GROUP": "G_R6", "GROUPS": "municipalidad-de-la-utn", "HASH": "", "USERNAME": "R6_Benegas"}, "msg": "Group ['G_R1', 'G_R2', 'G_R3', 'G_R4', 'G_R5', 'G_R6'] does not exist"}
+2024-11-19 19:55:14,084 p=4935 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-11-19 19:55:14,085 p=4935 u=vagrant n=ansible | 192.168.56.4               : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-11-19 19:55:14,085 p=4935 u=vagrant n=ansible | 192.168.56.5               : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   

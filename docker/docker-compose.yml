@@ -2,8 +2,9 @@ version: '3'
 
 services:
     web:
-        image: 
+        image: "andresben07/tp-div_318_grupo_muni
+        cipalidad-de-la-utn:latest" 
         ports:
-            - 
+          - "8081" 
         volumes:
-            - 
+          - ".web/file/:usr/share/nginx/html/file/"

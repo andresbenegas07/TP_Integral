@@ -11,6 +11,9 @@
   tasks:
     - include_role:
         name: TP_INI
+  tasks:
+    - include_role:
+        name: Alta_Usuarios_municipalidad-de-la-utn
     
     - name: "Otra tarea"
       debug:

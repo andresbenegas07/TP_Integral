@@ -4,16 +4,16 @@
 #Variable= {{ Variable_Vars_main |upper }}
 
 Nombre Grupo: {{ Nombre_Grupo }}
-División: 
-Fecha: 
+División: 318 
+Fecha: "{{ ansible_date_time.date }}"
 —-------------------------
-Distribución: 
-Cantidad de Cores: 
+Distribución: {{ ansible_distribution }}
+Cantidad de Cores: {{ ansible_processor_cores }}
 —-------------------------
-R1: Nombre:     Apellido: 
-R2: Nombre:     Apellido: 
-R3: Nombre:     Apellido: 
-R4: Nombre:     Apellido: 
-R5: Nombre:     Apellido: 
-R6: Nombre:     Apellido: 
+R1: Nombre: Cristian  Apellido: Collante 
+R2: Nombre: Franco    Apellido: Aguirre 
+R3: Nombre: Leonel    Apellido: Beneju
+R4: Nombre: Marshall  Apellido: Camara
+R5: Nombre: Marcos    Apellido: Almiron
+R6: Nombre: Andrés    Apellido: Benegas
 
