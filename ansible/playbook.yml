@@ -2,7 +2,7 @@
 - hosts: 
 #  - all
   - testing
-  - produccion
+  - produc
 
   # Variables Globales
   vars_files:
@@ -11,10 +11,13 @@
   tasks:
     - include_role:
         name: TP_INI
-  tasks:
+
     - include_role:
         name: Alta_Usuarios_municipalidad-de-la-utn
-    
+   
+    - include_role:
+        name: Instala-tools 
+
     - name: "Otra tarea"
       debug:
         msg: "Despues de la ejecucion del rol"

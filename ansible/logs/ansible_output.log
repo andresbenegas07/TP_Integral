@@ -375,3 +375,218 @@ look like what you expect, quote the entire value to ensure it does not change.
 2024-11-19 19:55:14,084 p=4935 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
 2024-11-19 19:55:14,085 p=4935 u=vagrant n=ansible | 192.168.56.4               : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
 2024-11-19 19:55:14,085 p=4935 u=vagrant n=ansible | 192.168.56.5               : ok=4    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-12-03 15:44:40,000 p=4991 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: vagrant@vmtesting
+
+2024-12-03 15:44:40,004 p=4991 u=vagrant n=ansible | ERROR! Specified hosts and/or --limit does not match any hosts
+2024-12-03 15:45:22,966 p=4992 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produc
+
+2024-12-03 15:45:22,970 p=4992 u=vagrant n=ansible | PLAY [testing,produc] **************************************************************************
+2024-12-03 15:45:23,002 p=4992 u=vagrant n=ansible | TASK [Gathering Facts] *************************************************************************
+2024-12-03 15:45:23,045 p=4992 u=vagrant n=ansible | fatal: [ansible_host=192.168.56.4]: UNREACHABLE! => {"changed": false, "msg": "Failed to connect to the host via ssh: ssh: Could not resolve hostname ansible_host=192.168.56.4: Name or service not known", "unreachable": true}
+2024-12-03 15:45:23,049 p=4992 u=vagrant n=ansible | PLAY RECAP *************************************************************************************
+2024-12-03 15:45:23,049 p=4992 u=vagrant n=ansible | ansible_host=192.168.56.4  : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2024-12-03 15:46:09,673 p=4999 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: vagrant@192.168.56.4
+
+2024-12-03 15:46:09,674 p=4999 u=vagrant n=ansible | ERROR! Specified hosts and/or --limit does not match any hosts
+2024-12-03 15:48:26,642 p=5004 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: vagrant@192.168.56.4
+
+2024-12-03 15:48:26,642 p=5004 u=vagrant n=ansible | ERROR! Specified hosts and/or --limit does not match any hosts
+2024-12-03 15:48:37,691 p=5005 u=vagrant n=ansible | ERROR! the playbook: vagrant@192.168.56.4 could not be found
+2024-12-03 15:48:45,158 p=5006 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produc
+
+2024-12-03 15:48:45,165 p=5006 u=vagrant n=ansible | PLAY [testing,produc] ************************************************************************************************************************************************************************
+2024-12-03 15:48:45,191 p=5006 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-12-03 15:48:47,997 p=5006 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 15:48:48,018 p=5006 u=vagrant n=ansible | TASK [include_role : TP_INI] *****************************************************************************************************************************************************************
+2024-12-03 15:48:48,094 p=5006 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] ***************************************************************************************************************************
+2024-12-03 15:48:48,119 p=5006 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-12-03 15:48:48,130 p=5006 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************************************************************************************************************
+2024-12-03 15:48:48,214 p=5006 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] ********************************************************************************************
+2024-12-03 15:48:48,237 p=5006 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-12-03 15:48:48,250 p=5006 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta de groups Secundarios del usuario] ********************************************************************************************************
+2024-12-03 15:48:48,755 p=5006 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 15:48:48,766 p=5006 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Agregando group Primario del usuario] **********************************************************************************************************
+2024-12-03 15:48:48,797 p=5006 u=vagrant n=ansible | fatal: [192.168.56.4]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'ansible.utils.unsafe_proxy.AnsibleUnsafeText object' has no attribute 'USERNAME'\n\nThe error appears to be in '/home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/roles/Alta_Usuarios_municipalidad-de-la-utn/tasks/main.yml': line 16, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: \"Agregando group Primario del usuario \"\n  ^ here\n"}
+2024-12-03 15:48:48,800 p=5006 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-12-03 15:48:48,800 p=5006 u=vagrant n=ansible | 192.168.56.4               : ok=4    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-12-03 15:56:07,366 p=5238 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produc
+
+2024-12-03 15:56:07,371 p=5238 u=vagrant n=ansible | PLAY [testing,produc] ************************************************************************************************************************************************************************
+2024-12-03 15:56:07,386 p=5238 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-12-03 15:56:09,526 p=5238 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 15:56:09,551 p=5238 u=vagrant n=ansible | TASK [include_role : TP_INI] *****************************************************************************************************************************************************************
+2024-12-03 15:56:09,603 p=5238 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] ***************************************************************************************************************************
+2024-12-03 15:56:09,627 p=5238 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-12-03 15:56:09,638 p=5238 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************************************************************************************************************
+2024-12-03 15:56:09,690 p=5238 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] ********************************************************************************************
+2024-12-03 15:56:09,715 p=5238 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-12-03 15:56:09,731 p=5238 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta de groups Secundarios del usuario] ********************************************************************************************************
+2024-12-03 15:56:10,218 p=5238 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 15:56:10,231 p=5238 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Agregando group Primario del usuario] **********************************************************************************************************
+2024-12-03 15:56:10,610 p=5238 u=vagrant n=ansible | ok: [192.168.56.4] => (item={'USERNAME': 'R1_Collante', 'GROUP': 'G_R1', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 15:56:11,002 p=5238 u=vagrant n=ansible | ok: [192.168.56.4] => (item={'USERNAME': 'R2_Aguirre', 'GROUP': 'G_R2', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 15:56:11,357 p=5238 u=vagrant n=ansible | ok: [192.168.56.4] => (item={'USERNAME': 'R3_Beneju', 'GROUP': 'G_R3', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 15:56:11,701 p=5238 u=vagrant n=ansible | ok: [192.168.56.4] => (item={'USERNAME': 'R4_Camara', 'GROUP': 'G_R4', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 15:56:12,058 p=5238 u=vagrant n=ansible | ok: [192.168.56.4] => (item={'USERNAME': 'R5_Almiron', 'GROUP': 'G_R5', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 15:56:12,401 p=5238 u=vagrant n=ansible | ok: [192.168.56.4] => (item={'USERNAME': 'R6_Benegas', 'GROUP': 'G_R6', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 15:56:12,414 p=5238 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta y/o Actualizacion del usuario] ************************************************************************************************************
+2024-12-03 15:56:12,445 p=5238 u=vagrant n=ansible | fatal: [192.168.56.4]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'dict object' has no attribute 'HASH'\n\nThe error appears to be in '/home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/roles/Alta_Usuarios_municipalidad-de-la-utn/tasks/main.yml': line 26, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: \"Alta y/o Actualizacion del usuario\"\n  ^ here\n"}
+2024-12-03 15:56:12,447 p=5238 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-12-03 15:56:12,447 p=5238 u=vagrant n=ansible | 192.168.56.4               : ok=5    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-12-03 16:06:29,665 p=5684 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produc
+
+2024-12-03 16:06:29,672 p=5684 u=vagrant n=ansible | PLAY [testing,produc] ************************************************************************
+2024-12-03 16:06:29,686 p=5684 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************
+2024-12-03 16:06:31,825 p=5684 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 16:06:31,850 p=5684 u=vagrant n=ansible | TASK [include_role : TP_INI] *****************************************************************
+2024-12-03 16:06:31,901 p=5684 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] ***************************
+2024-12-03 16:06:31,929 p=5684 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-12-03 16:06:31,942 p=5684 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************
+2024-12-03 16:06:31,997 p=5684 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : get hash password {{ USERNAME }}] **************
+2024-12-03 16:06:32,025 p=5684 u=vagrant n=ansible | fatal: [192.168.56.4]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: 'USERNAME' is undefined\n\nThe error appears to be in '/home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/roles/Alta_Usuarios_municipalidad-de-la-utn/tasks/main.yml': line 3, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n# tasks file for TP_INI\n- name: \"get hash password {{ USERNAME }}\"\n  ^ here\nWe could be wrong, but this one looks like it might be an issue with\nmissing quotes. Always quote template expression brackets when they\nstart a value. For instance:\n\n    with_items:\n      - {{ foo }}\n\nShould be written as:\n\n    with_items:\n      - \"{{ foo }}\"\n"}
+2024-12-03 16:06:32,028 p=5684 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************
+2024-12-03 16:06:32,028 p=5684 u=vagrant n=ansible | 192.168.56.4               : ok=2    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-12-03 16:17:41,202 p=5865 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produc
+
+2024-12-03 16:17:41,206 p=5865 u=vagrant n=ansible | PLAY [testing,produc] ************************************************************************************************************************************************************************
+2024-12-03 16:17:41,222 p=5865 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-12-03 16:17:43,323 p=5865 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 16:17:43,346 p=5865 u=vagrant n=ansible | TASK [include_role : TP_INI] *****************************************************************************************************************************************************************
+2024-12-03 16:17:43,399 p=5865 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] ***************************************************************************************************************************
+2024-12-03 16:17:43,429 p=5865 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-12-03 16:17:43,441 p=5865 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************************************************************************************************************
+2024-12-03 16:17:43,490 p=5865 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : get hash password vagrant] *********************************************************************************************************************
+2024-12-03 16:17:43,901 p=5865 u=vagrant n=ansible | changed: [192.168.56.4]
+2024-12-03 16:17:43,914 p=5865 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Rol: TP_INI - Grupo: municipalidad-de-la-utn] **************************************************************************************************
+2024-12-03 16:17:43,941 p=5865 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "$y$j9T$f7V.J8o8/5JXqaI3xUKKQ0$oND2iaEkOI22AcHc9kfKwylXqBi.VixFO/cPGuxMD.."
+}
+2024-12-03 16:17:43,953 p=5865 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta de groups Secundarios del usuario] ********************************************************************************************************
+2024-12-03 16:17:44,450 p=5865 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 16:17:44,463 p=5865 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Agregando group Primario del usuario] **********************************************************************************************************
+2024-12-03 16:17:44,910 p=5865 u=vagrant n=ansible | changed: [192.168.56.4] => (item=G_R1)
+2024-12-03 16:17:45,262 p=5865 u=vagrant n=ansible | changed: [192.168.56.4] => (item=G_R2)
+2024-12-03 16:17:45,642 p=5865 u=vagrant n=ansible | changed: [192.168.56.4] => (item=G_R3)
+2024-12-03 16:17:46,041 p=5865 u=vagrant n=ansible | changed: [192.168.56.4] => (item=G_R4)
+2024-12-03 16:17:46,426 p=5865 u=vagrant n=ansible | changed: [192.168.56.4] => (item=G_R5)
+2024-12-03 16:17:46,806 p=5865 u=vagrant n=ansible | changed: [192.168.56.4] => (item=G_R6)
+2024-12-03 16:17:46,819 p=5865 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta y/o Actualizacion del usuario] ************************************************************************************************************
+2024-12-03 16:17:46,849 p=5865 u=vagrant n=ansible | fatal: [192.168.56.4]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: dict object has no element 0\n\nThe error appears to be in '/home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/roles/Alta_Usuarios_municipalidad-de-la-utn/tasks/main.yml': line 31, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: \"Alta y/o Actualizacion del usuario\"\n  ^ here\n"}
+2024-12-03 16:17:46,853 p=5865 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-12-03 16:17:46,854 p=5865 u=vagrant n=ansible | 192.168.56.4               : ok=6    changed=2    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-12-03 16:19:22,167 p=6322 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produc
+
+2024-12-03 16:19:22,171 p=6322 u=vagrant n=ansible | PLAY [testing,produc] ************************************************************************************************************************************************************************
+2024-12-03 16:19:22,187 p=6322 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-12-03 16:19:24,277 p=6322 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 16:19:24,298 p=6322 u=vagrant n=ansible | TASK [include_role : TP_INI] *****************************************************************************************************************************************************************
+2024-12-03 16:19:24,352 p=6322 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] ***************************************************************************************************************************
+2024-12-03 16:19:24,373 p=6322 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-12-03 16:19:24,390 p=6322 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************************************************************************************************************
+2024-12-03 16:19:24,441 p=6322 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : get hash password vagrant] *********************************************************************************************************************
+2024-12-03 16:19:24,897 p=6322 u=vagrant n=ansible | changed: [192.168.56.4]
+2024-12-03 16:19:24,911 p=6322 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Rol: TP_INI - Grupo: municipalidad-de-la-utn] **************************************************************************************************
+2024-12-03 16:19:24,938 p=6322 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "$y$j9T$f7V.J8o8/5JXqaI3xUKKQ0$oND2iaEkOI22AcHc9kfKwylXqBi.VixFO/cPGuxMD.."
+}
+2024-12-03 16:19:24,954 p=6322 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta de groups Secundarios del usuario] ********************************************************************************************************
+2024-12-03 16:19:25,452 p=6322 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 16:19:25,467 p=6322 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Agregando group Primario del usuario] **********************************************************************************************************
+2024-12-03 16:19:25,866 p=6322 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R1)
+2024-12-03 16:19:26,239 p=6322 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R2)
+2024-12-03 16:19:26,590 p=6322 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R3)
+2024-12-03 16:19:26,934 p=6322 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R4)
+2024-12-03 16:19:27,326 p=6322 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R5)
+2024-12-03 16:19:27,677 p=6322 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R6)
+2024-12-03 16:19:27,694 p=6322 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta y/o Actualizacion del usuario] ************************************************************************************************************
+2024-12-03 16:19:27,721 p=6322 u=vagrant n=ansible | fatal: [192.168.56.4]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: dict object has no element 0\n\nThe error appears to be in '/home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/roles/Alta_Usuarios_municipalidad-de-la-utn/tasks/main.yml': line 31, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: Alta y/o Actualizacion del usuario\n  ^ here\n"}
+2024-12-03 16:19:27,727 p=6322 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-12-03 16:19:27,729 p=6322 u=vagrant n=ansible | 192.168.56.4               : ok=6    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-12-03 16:23:02,225 p=6744 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produc
+
+2024-12-03 16:23:02,230 p=6744 u=vagrant n=ansible | PLAY [testing,produc] ************************************************************************************************************************************************************************
+2024-12-03 16:23:02,245 p=6744 u=vagrant n=ansible | TASK [Gathering Facts] ***********************************************************************************************************************************************************************
+2024-12-03 16:23:04,351 p=6744 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 16:23:04,370 p=6744 u=vagrant n=ansible | TASK [include_role : TP_INI] *****************************************************************************************************************************************************************
+2024-12-03 16:23:04,422 p=6744 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] ***************************************************************************************************************************
+2024-12-03 16:23:04,449 p=6744 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-12-03 16:23:04,463 p=6744 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] **********************************************************************************************************************************
+2024-12-03 16:23:04,517 p=6744 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : get hash password vagrant] *********************************************************************************************************************
+2024-12-03 16:23:04,917 p=6744 u=vagrant n=ansible | changed: [192.168.56.4]
+2024-12-03 16:23:04,930 p=6744 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Rol: TP_INI - Grupo: municipalidad-de-la-utn] **************************************************************************************************
+2024-12-03 16:23:04,961 p=6744 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "$y$j9T$f7V.J8o8/5JXqaI3xUKKQ0$oND2iaEkOI22AcHc9kfKwylXqBi.VixFO/cPGuxMD.."
+}
+2024-12-03 16:23:04,970 p=6744 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta de groups Secundarios del usuario] ********************************************************************************************************
+2024-12-03 16:23:05,473 p=6744 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 16:23:05,490 p=6744 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Agregando group Primario del usuario] **********************************************************************************************************
+2024-12-03 16:23:05,875 p=6744 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R1)
+2024-12-03 16:23:06,254 p=6744 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R2)
+2024-12-03 16:23:06,601 p=6744 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R3)
+2024-12-03 16:23:06,962 p=6744 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R4)
+2024-12-03 16:23:07,310 p=6744 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R5)
+2024-12-03 16:23:07,738 p=6744 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R6)
+2024-12-03 16:23:07,750 p=6744 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta y/o Actualizacion del usuario] ************************************************************************************************************
+2024-12-03 16:23:07,778 p=6744 u=vagrant n=ansible | fatal: [192.168.56.4]: FAILED! => {"msg": "The task includes an option with an undefined variable. The error was: dict object has no element 0\n\nThe error appears to be in '/home/vagrant/repogit/UTN-FRA_SO_TP-Integral/ansible/roles/Alta_Usuarios_municipalidad-de-la-utn/tasks/main.yml': line 31, column 3, but may\nbe elsewhere in the file depending on the exact syntax problem.\n\nThe offending line appears to be:\n\n\n- name: \"Alta y/o Actualizacion del usuario\"\n  ^ here\n"}
+2024-12-03 16:23:07,783 p=6744 u=vagrant n=ansible | PLAY RECAP ***********************************************************************************************************************************************************************************
+2024-12-03 16:23:07,784 p=6744 u=vagrant n=ansible | 192.168.56.4               : ok=6    changed=1    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2024-12-03 16:27:57,943 p=7172 u=vagrant n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: produc
+
+2024-12-03 16:27:57,950 p=7172 u=vagrant n=ansible | PLAY [testing,produc] **********************************************************
+2024-12-03 16:27:57,967 p=7172 u=vagrant n=ansible | TASK [Gathering Facts] *********************************************************
+2024-12-03 16:28:00,110 p=7172 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 16:28:00,135 p=7172 u=vagrant n=ansible | TASK [include_role : TP_INI] ***************************************************
+2024-12-03 16:28:00,184 p=7172 u=vagrant n=ansible | TASK [TP_INI : Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}] *************
+2024-12-03 16:28:00,211 p=7172 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Inicio de tareas dentro del Rol: TP_INI"
+}
+2024-12-03 16:28:00,222 p=7172 u=vagrant n=ansible | TASK [include_role : Alta_Usuarios_municipalidad-de-la-utn] ********************
+2024-12-03 16:28:00,269 p=7172 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : get hash password vagrant] *******
+2024-12-03 16:28:00,654 p=7172 u=vagrant n=ansible | changed: [192.168.56.4]
+2024-12-03 16:28:00,667 p=7172 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Rol: TP_INI - Grupo: municipalidad-de-la-utn] ***
+2024-12-03 16:28:00,692 p=7172 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "$y$j9T$f7V.J8o8/5JXqaI3xUKKQ0$oND2iaEkOI22AcHc9kfKwylXqBi.VixFO/cPGuxMD.."
+}
+2024-12-03 16:28:00,706 p=7172 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta de groups Secundarios del usuario] ***
+2024-12-03 16:28:01,190 p=7172 u=vagrant n=ansible | ok: [192.168.56.4]
+2024-12-03 16:28:01,201 p=7172 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Agregando group Primario del usuario] ***
+2024-12-03 16:28:01,578 p=7172 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R1)
+2024-12-03 16:28:01,940 p=7172 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R2)
+2024-12-03 16:28:02,297 p=7172 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R3)
+2024-12-03 16:28:02,678 p=7172 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R4)
+2024-12-03 16:28:03,058 p=7172 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R5)
+2024-12-03 16:28:03,402 p=7172 u=vagrant n=ansible | ok: [192.168.56.4] => (item=G_R6)
+2024-12-03 16:28:03,411 p=7172 u=vagrant n=ansible | TASK [Alta_Usuarios_municipalidad-de-la-utn : Alta y/o Actualizacion del usuario] ***
+2024-12-03 16:28:04,079 p=7172 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R1_Collante', 'GROUP': 'G_R1', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 16:28:04,504 p=7172 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R2_Aguirre', 'GROUP': 'G_R2', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 16:28:04,926 p=7172 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R3_Beneju', 'GROUP': 'G_R3', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 16:28:05,370 p=7172 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R4_Camara', 'GROUP': 'G_R4', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 16:28:05,809 p=7172 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R5_Almiron', 'GROUP': 'G_R5', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 16:28:06,254 p=7172 u=vagrant n=ansible | changed: [192.168.56.4] => (item={'USERNAME': 'R6_Benegas', 'GROUP': 'G_R6', 'GROUPS': 'municipalidad-de-la-utn'})
+2024-12-03 16:28:06,265 p=7172 u=vagrant n=ansible | TASK [include_role : Instala-tools] ********************************************
+2024-12-03 16:28:06,310 p=7172 u=vagrant n=ansible | TASK [Instala-tools : Instalando apache] ***************************************
+2024-12-03 16:28:08,353 p=7172 u=vagrant n=ansible | ok: [192.168.56.4] => (item=htop)
+2024-12-03 16:28:09,746 p=7172 u=vagrant n=ansible | ok: [192.168.56.4] => (item=tmux)
+2024-12-03 16:28:21,917 p=7172 u=vagrant n=ansible | changed: [192.168.56.4] => (item=speedtest-cli)
+2024-12-03 16:28:21,933 p=7172 u=vagrant n=ansible | TASK [Otra tarea] **************************************************************
+2024-12-03 16:28:21,951 p=7172 u=vagrant n=ansible | ok: [192.168.56.4] => {
+    "msg": "Despues de la ejecucion del rol"
+}
+2024-12-03 16:28:21,973 p=7172 u=vagrant n=ansible | PLAY RECAP *********************************************************************
+2024-12-03 16:28:21,973 p=7172 u=vagrant n=ansible | 192.168.56.4               : ok=9    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   

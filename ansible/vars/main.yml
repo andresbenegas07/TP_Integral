@@ -2,15 +2,15 @@
 # Variables Globales:
 
 Nombre_Grupo: "municipalidad-de-la-utn"
-
+USERNAME: "vagrant"
 
 LIST_USUARIOS: 
-    - "R1_Collante"
-    - "R2_Aguirre"
-    - "R3_Beneju"
-    - "R4_Camara"
-    - "R5_Almiron"
-    - "R6_Benegas"
+    - { USERNAME: "R1_Collante", GROUP: "G_R1" , GROUPS: "municipalidad-de-la-utn"}
+    - { USERNAME: "R2_Aguirre", GROUP: "G_R2" , GROUPS: "municipalidad-de-la-utn"}
+    - { USERNAME: "R3_Beneju", GROUP: "G_R3" , GROUPS: "municipalidad-de-la-utn"}
+    - { USERNAME: "R4_Camara", GROUP: "G_R4" , GROUPS:  "municipalidad-de-la-utn"}
+    - { USERNAME: "R5_Almiron", GROUP: "G_R5" , GROUPS:  "municipalidad-de-la-utn"}
+    - { USERNAME: "R6_Benegas", GROUP: "G_R6" , GROUPS:  "municipalidad-de-la-utn"}
 
 LIST_GROUPS:
   - "G_R1"
@@ -19,3 +19,9 @@ LIST_GROUPS:
   - "G_R4"
   - "G_R5"
   - "G_R6"
+
+LISTADO_DE_PROGRAMAS:
+  - htop
+  - tmux
+  - speedtest-cli
+

@@ -3,8 +3,8 @@ testing
 produccion
 
 [testing]
-ansible_host=192.168.56.4 ansible_user=vagrant
+192.168.56.4 
 
 [produccion]
-ansible_host=192.168.56.5 ansible_user=vagrant
+192.168.56.5 
 

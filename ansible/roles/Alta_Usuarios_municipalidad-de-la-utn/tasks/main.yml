@@ -1,14 +1,19 @@
 ---
 # tasks file for TP_INI
+- name: "get hash password {{ USERNAME }}"
+  become: yes
+  local_action: "shell grep  {{ USERNAME }} /etc/shadow |awk -F ':' '{print $2}' "
+  register: "PASSWORD_SHA512"
 
-- name: "Rol: TP_INI - Grupo: {{ municipalidad-de-la-utn }}"
+
+- name: "Rol: TP_INI - Grupo: {{ Nombre_Grupo }}"
   debug:
-    msg: "Inicio de tareas dentro del Rol: TP_INI"
+    msg: "{{  PASSWORD_SHA512.stdout }}"
 
 - name: "Alta de groups Secundarios del usuario "
   become: yes
   group:
-    name: "municipalidad-de-la-utn"
+    name: "{{ Nombre_Grupo }}"
     state: present
   tags:
     - Alta-Usuarios
@@ -16,9 +21,9 @@
 - name: "Agregando group Primario del usuario "
   become: yes
   group:
-    name: "{{ item.USERNAME }}"
+    name: "{{ item }}"
     state: present
-  with_items: "{{ LIST_USUARIOS }}"
+  with_items: "{{ LIST_GROUPS }}"
   tags:
     - Alta-Usuarios
 
@@ -27,12 +32,12 @@
   become: yes
   user:
     name: "{{ item.USERNAME }}"
-    password: "{{ item.HASH }}"
-    group: "{{ LIST_GROUPS }}"
-    groups: "municipalidad-de-la-utn"
+    password: "{{ PASSWORD_SHA512.stdout }}"
+    group: "{{ item.GROUP }}"
+    groups: "{{ Nombre_Grupo }}"
     state: present
     append: yes
-  with_items: "{{ LIST_USUARIOS }}"
+  with_items:  "{{ LIST_USUARIOS }}"
   tags:
     - Alta-Usuarios
 
